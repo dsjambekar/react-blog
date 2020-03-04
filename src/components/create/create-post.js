@@ -36,7 +36,7 @@ const CreatePost = () => {
 			is_published: true
 		};
 
-		axios.post('http://localhost:1234/posts/create', newPost)
+		axios.post('https://reactmyblogbackend.herokuapp.com/posts/create', newPost)
 			.then(res => console.log(res.data));
 
 		setTitle('');
