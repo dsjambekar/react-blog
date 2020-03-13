@@ -36,7 +36,7 @@ const CreatePost = () => {
 			is_published: true
 		};
 
-		axios.post('https://reactmyblogbackend.herokuapp.com/posts/create', newPost)
+		axios.post(process.env.API_URL + '/posts/create', newPost)
 			.then(res => console.log(res.data));
 
 		setTitle('');
@@ -75,7 +75,7 @@ const CreatePost = () => {
 					}}
 			>
 			</Sidebar>
-			<form>
+			<form className="form-create">
 				<div className="form-group">
 					<input type="text"
 						className="form-control titleInput"

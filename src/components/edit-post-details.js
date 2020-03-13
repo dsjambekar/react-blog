@@ -12,15 +12,15 @@ const EditPostDetails = (props) => {
 
 	return (
 
-		<div style={{ marginTop: 10 }}>
-			<form>
+		<div className="editPost">
+			<form className="form-edit-details">
 				<div className="form-group">
 					<label className="mainLabel">Created By: </label>
-					<input className="form-control" value={createdBy} readonly />
+					<label className="otherLabel">{createdBy}</label>
 				</div>
 				<div className="form-group">
 					<label className="mainLabel">Created At: </label>
-					<input className="form-control" value={createdAt} readonly />
+					<label className="otherLabel">{createdAt}</label>
 				</div>
 				<div className="form-group">
 					<label className="mainLabel">Category: </label>
@@ -30,7 +30,7 @@ const EditPostDetails = (props) => {
 							name="categoryOptions"
 							id="categoryPersonal"
 							value="Personal"
-
+							onChange={() => { setCategory("Personal") }}
 						/>
 						<label className="form-check-label">Personal</label>
 					</div>
@@ -40,7 +40,7 @@ const EditPostDetails = (props) => {
 							name="categoryOptions"
 							id="categoryMovies"
 							value="Movies"
-
+							onChange={() => { setCategory("Movies") }}
 						/>
 						<label className="form-check-label">Movies</label>
 					</div>
@@ -50,7 +50,7 @@ const EditPostDetails = (props) => {
 							name="categoryOptions"
 							id="categoryFood"
 							value="Food"
-
+							onChange={() => { setCategory("Food") }}
 						/>
 						<label className="form-check-label">Food</label>
 					</div>
@@ -60,7 +60,7 @@ const EditPostDetails = (props) => {
 							name="categoryOptions"
 							id="categoryTechnical"
 							value="Technical"
-
+							onChange={() => { setCategory("Technical") }}
 						/>
 						<label className="form-check-label">Technical</label>
 					</div>

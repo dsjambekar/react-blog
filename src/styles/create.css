@@ -18,5 +18,27 @@
 
 .mainLabel
 {
-	font-weight: bold;
+	font-size: 13px;
+	font-weight: 600;
+    text-align: left;
+    color: #191e23;
+	width: 300px;
+}
+
+.otherLabel
+{
+	font-size: 13px;
+    text-align: left;
+    color: #191e23;
+}
+
+.form-create{
+	margin-top:50px;
+	max-width:1000px;
+}
+
+.form-edit-details{
+	margin-top: 60px;
+	border: 1px solid #e2e4e7;
+	padding: 15px;
 }
