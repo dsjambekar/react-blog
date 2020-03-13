@@ -23,7 +23,7 @@
 		"react-sidebar": "^3.0.2"
 	},
 	"scripts": {
-		"start": "webpack-dev-server --open --mode development",
+		"start": "node server.js",
 		"dev": "webpack --env.ENVIRONMENT=development --config webpack.config.js",
 		"build": "webpack --env.ENVIRONMENT=production --config webpack.config.js",
 		"test": "react-scripts test",
